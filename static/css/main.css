@@ -1,0 +1,233 @@
+/* Спецификация */
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: #000;
+
+}
+h3 {
+    font-weight: 400;
+}
+h2{
+    text-align: center;
+}
+
+.title {
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title_main {
+    font-size: 32px;
+}
+
+.title__text {
+    font-size: 20px;
+    width: 780px;
+    margin: 0 auto;
+}
+
+.yellow {
+    color:#fcdb00;
+}
+
+/*  First screen       */
+
+header {
+    background: #fcdb00;
+    color: black;
+    padding-top: 57px;
+    padding-bottom: 105px;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+.menu__item {
+    margin: 0 57px ;
+}
+
+.menu__item a {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+}
+
+.offer {
+    margin-top: 117px;
+}
+
+.offer__title {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.offer__intro {
+    font-size: 20px;
+    line-height: 1.3em;
+}
+.offer__text {
+    font-size: 16px;
+    margin-top: 20px;
+    width: 400px;
+}
+
+.icons__items {
+    margin-right: 30px;
+}
+
+.icons__items a {
+    color:#000;
+    font-size: 42px;
+    transition: all 0.3s ease;
+}
+
+.icons__items a:hover {
+   text-decoration: none;
+   font-size: 44px;
+   color: #ff4480;
+}
+
+.ipad {
+    display: block;
+    margin: 60px auto 0;
+    width: 600px;
+    height: 400px;
+
+}
+.lico {
+    display: block;
+    margin: 60px auto 0;
+    width: 20%;
+}
+
+/*  Second */
+
+.feature {
+    margin-bottom: 76px;
+}
+
+.feature__icon {
+    font-size: 50px;
+    margin-right: 37px;
+    color:#000;
+}
+
+.feature__text {
+    color: #898989;
+}
+
+/*   Three  */
+.touch {
+    background: #010101;
+    color: #fff;
+}
+
+.form {
+    text-align: center;
+}
+
+.form__input {
+    background: #fff;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 5px;
+    width: 580px;
+    padding: 15px 0;
+    padding-left: 23px;
+   
+
+}
+
+.form__btn {
+    font-family: 'PT Sans',
+    sans-serif;
+    background: #fcdb00;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 120px;
+    border: 0;
+    padding: 14px 0;
+    margin-left: 21px;
+    cursor: pointer;
+     outline: none;
+}
+
+/* Footer */
+
+.footer {
+    background: #000;
+    padding: 50px 0 94px;
+}
+
+.credits {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    width: 284px;
+    margin: 0 auto;
+
+}
+
+/*  Media #fff; */
+
+@media screen and (max-width: 992px){
+    .log {
+        display:block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .offer {
+        text-align: center;
+    }
+    .offer__text {
+       margin: 20px auto;
+        width: auto;
+    }
+    .icons {
+       justify-content: center;
+    }
+    .icons__items:nth-child(3) {
+        margin-right: 0;
+    }
+    .form__input {
+        margin-right: 0;
+        width: 100%
+    }
+    .form__btn {
+        margin-top: 20px;
+      
+    }
+    .title__text {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .ipad {
+        width: 100%;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu__item {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+}

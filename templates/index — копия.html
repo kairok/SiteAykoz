@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+     <form action="\mine\new" method=post class=add-entry>
+      <dl>
+        <dt>FIO:
+        <dd><input type=text size=70 name=fio>
+        <dt>IIN:
+        <dd><input type=text size=30 name=iin>
+          <dt>Date begin:
+        <dd><input type=text size=30 name=dbegin>
+          <dt>Date End:
+        <dd><input type=text size=30 name=dend>
+
+        <dd><input type=submit value=Share>
+      </dl>
+    </form>
+    <p>{{ name }}</p>
+
+</body>
+</html>

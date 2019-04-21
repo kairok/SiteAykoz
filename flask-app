@@ -1,0 +1,6 @@
+FROM python:latest
+ADD . /srv/app
+WORKDIR /srv/app
+RUN pip install -r requirements.txt
+ENTRYPOINT ["python"]
+CMD ["app.py", "run"]
